@@ -20,7 +20,6 @@ public class StudentServiceImpl implements StudentService {
  @Cacheable("151")
     public List<Student> findAll() {
      Map<String, Object> map = new HashMap<>();
-
      return studentMapper.selectByMap(map);
     }
     //清除缓存
