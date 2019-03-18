@@ -14,6 +14,9 @@ public class StudentController {
     private StudentService studentService;
     @RequestMapping("/findAll")
    public ModelAndView findAll(){
+       System.out.println("666666lhl");
+       System.out.println("666666lhl");
+       System.out.println("666666lhl");
         ModelAndView mv=new ModelAndView("/index");
       mv.addObject("studentList",studentService.findAll());
       return mv;
